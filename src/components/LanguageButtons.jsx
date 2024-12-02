@@ -9,9 +9,10 @@ function LanguageButtons({languages, selectedLanguage, onSelectLanguage}){
                 style={{
                     backgroundColor: language.id === selectedLanguage.id ? "black" : "red",
                     color: "white",
-                    margin: "5px",
+                    margin: "7px",
                     padding: "10px",
-                    borderRadius:"20px"
+                    borderRadius:"20px",
+
                   }}
                 >
                 {language.title}

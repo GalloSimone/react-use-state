@@ -13,14 +13,14 @@ const App=() => {
         <div className='p-5 h1 bg-light-subtle'>
         <Header/> 
         </div>
-        <div>
+        <div className='p-5'>
           <LanguageButtons
            languages={languages}
            selectedLanguage={selectedLanguage}
            onSelectLanguage={setSelectedLanguage}
           />
         </div>
-        <div>
+        <div className='p-5'>
           < LanguageCard 
           language={selectedLanguage}
           />

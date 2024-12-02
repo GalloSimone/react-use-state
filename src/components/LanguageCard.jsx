@@ -3,10 +3,12 @@ import React from "react"
 const LanguageCard = ({language}) => {
     return (
         <div style={{
-            padding: "20px",
+            padding: "10px",
             border: "1px solid #ddd",
             borderRadius: "15px",
             backgroundColor: "#f9f9f9",
+            width:"680px",
+            
           }}>
           
      
