@@ -1,7 +1,7 @@
 import React from 'react'
 export default function Header(){
     return(
-     <header> Learn web developments</header>
+     <header> Learn web development</header>
     )
 }
   
