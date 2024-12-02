@@ -1,19 +1,31 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import languages from "./data/languages.js"
 import Header from "./components/Header.jsx"
+import LanguageButtons from "./components/LanguageButtons.jsx"
+import LanguageCard from "./components/LanguageCard.jsx"
 
 
-function App() {
-  const [count, setCount] = useState(0)
+const App=() => {
+  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
 
   return (
-    <>
-    <div>
-      <Header/> 
-    </div>
-      
-    </>
+      <div>
+        <div className='p-5 h1 bg-light-subtle'>
+        <Header/> 
+        </div>
+        <div>
+          <LanguageButtons
+           languages={languages}
+           selectedLanguage={selectedLanguage}
+           onSelectLanguage={setSelectedLanguage}
+          />
+        </div>
+        <div>
+          < LanguageCard 
+          language={selectedLanguage}
+          />
+        </div>
+      </div>
   )}
 
-export default App
+export default App;

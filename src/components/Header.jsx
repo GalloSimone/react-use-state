@@ -1,7 +1,7 @@
 import React from 'react'
-export default function Header(){
+ function Header(){
     return(
      <header> Learn web development</header>
     )
 }
-  
+export default Header
